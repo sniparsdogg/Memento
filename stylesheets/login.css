@@ -10,12 +10,17 @@ main{
     align-items: center;
     justify-items: center;
     margin: auto 0;
+
+
 }
 
 .opcoesLogin {
-    margin: 10% auto;
-    height: 100%;
-    width: 75%;
+    margin: auto;
+    height: 35%;
+    width: 35%;
     justify-items: center;
     align-items: center;
+
+    border: 0.5vw solid black;
+    border-radius: 20px;
 }
