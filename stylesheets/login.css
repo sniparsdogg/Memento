@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+main{
+    font-family: 'Ubuntu', sans-serif;
+
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto 0;
+}
+
+.opcoesLogin {
+    margin: 10% auto;
+    height: 100%;
+    width: 75%;
+    justify-items: center;
+    align-items: center;
+}
