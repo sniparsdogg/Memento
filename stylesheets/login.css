@@ -1,29 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+header{
+    font-size: 30px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
 
 main{
-    font-family: 'Ubuntu', sans-serif;
-
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: auto 0;
-
     height: 720px;
     width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .opcoesLogin {
-    margin: auto;
-    height: 35%;
-    width: 35%;
-    justify-items: center;
-    align-items: center;
-
+    width: 50%;
     border: 0.5vw solid black;
     border-radius: 20px;
+}
+
+
+#frmLogin{
+    margin: 50px auto 0;
+}
+
+#frmLogin input{
+    width:50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.opcaoRegisto{
+    margin: 0 auto 50px;
+}
+
+.unregistered a{
+    text-decoration: none;
 }
 
 header {
