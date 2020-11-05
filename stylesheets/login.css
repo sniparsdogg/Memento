@@ -7,6 +7,7 @@ header{
 body{
     font-family: 'Ubuntu Regular', sans-serif;
     text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -15,12 +16,11 @@ main{
     width: 1280px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.opcoesLogin {
+.opcoesLogin {  
     width: 50%;
     border: 0.5vw solid black;
     border-radius: 20px;
@@ -53,6 +53,6 @@ main{
 }
 
 header {
-    font-size: 50px;
+    font-size: 30px;
 }
 
