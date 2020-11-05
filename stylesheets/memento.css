@@ -1,0 +1,48 @@
+#titulo {
+    float: left;
+    margin-top: auto;
+    margin-left: 50px;
+    font-size: 75px;
+}
+
+#nav-links {
+    display: inline-flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#nav-links>a {
+    float: right;
+    height: 80px;
+    justify-items: center;
+    align-items: center;
+    padding: 13px;
+    border: 0.25vw solid black;
+}
+
+img {
+    height: 90%;
+}
+
+.vazio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.vazio .textoVazio{
+    margin: 10px auto -35px;
+}
+
+.importar .botao{
+   position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
