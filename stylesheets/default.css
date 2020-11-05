@@ -21,8 +21,9 @@ nav {
     justify-items: center;
     align-items: center;
     border-bottom: 0.5vw solid black;
+    width: 100%
 }
 
 main{
-    margin-top: 15%;
+    margin-top: 10%;
 }
