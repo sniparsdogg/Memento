@@ -15,6 +15,17 @@ const PASSWORD = "loginPass";
 
 let formulario = null;
 
+function Login(username, password){
+    this.username = username;
+    this.password = password;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                                         VARIÁVEIS GLOBAIS */
+/* ------------------------------------------------------------------------- */
+
+
+
 /* ------------------------------------------------------------------------- */
 /*                                                INICIALIZAÇÃO DA APLICAÇÃO */
 /* ------------------------------------------------------------------------- */
@@ -45,6 +56,14 @@ function defineEventHandlersParaElementsHTML() {
         addEventListener("click",fazerLogin);
 }
 
+function getUsernameLoginForm() {
+    return formulario.elements[USERNAME].value;
+}
+
+function getPasswordLoginForm() {
+    return formulario.elements[PASSWORD].value;
+}
+
 /**
  * Trata dos dados do Login, provinientes do formulário HTML
  */
@@ -55,32 +74,27 @@ function fazerLogin() {
     let senha = null;
 
     if (loginValid) {
+        let loginData = new Login(getUsernameLoginForm(), getPasswordLoginForm());
+        //
+        // for (var x = 0; x <= localStorage.length; x++) {
+        //
+        //     if (x == localStorage.length) {
+        //         alert('Username ou Password incorreta!');
+        //         break;
+        //     }
+        //
+        //     let user = JSON.parse(localStorage.getItem("User" + String(x)));
 
-        username = formulario.elements[USERNAME].value;
-        senha = formulario.elements[PASSWORD].value;
+            if ((loginData.username === "LuisAndre" && loginData.password === "xpto1234")
+                || (loginData.username === "JoaoFilipe32" && loginData.password === "j0a0f1x3")) {
 
-        for (var x = 0; x <= localStorage.length; x++) {
+                definirContaAtiva(loginData);
+                alert("O seu Login foi executado com sucesso!");
 
-            if (x == localStorage.length) {
-                alert('Username ou Password incorreta!');
-                break;
-            }
-
-            let user = JSON.parse(localStorage.getItem("User" + String(x)));
-
-            if (user.username == username) {
-                if (user.senha == senha) {
-
-                    user.login = true;
-
-                    localStorage.setItem("User" + String(localStorage.length), JSON.stringify(user));
-                    alert("O seu Login foi executado com sucesso!");
-
-                    formulario.reset();
-                    window.location.href = "memento.html";
-                    break;
-                }
-            }
+                formulario.reset();
+                window.location.href = "memento.html";
+        } else {
+            alert("Username ou Password incorreta!");
         }
     }
 }

@@ -5,7 +5,7 @@ header{
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Regular', sans-serif;
     text-align: center;
 }
 
@@ -26,15 +26,22 @@ main{
     border-radius: 20px;
 }
 
-
 #frmLogin{
     margin: 50px auto 0;
 }
 
 #frmLogin input{
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-weight: 800;
     width:50%;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#frmLogin #btnLogin{
+    cursor: pointer;
 }
 
 .opcaoRegisto{

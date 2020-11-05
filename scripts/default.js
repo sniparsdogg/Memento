@@ -26,3 +26,6 @@ function obterBaseDeDados(){
     return JSON.parse(localStorage.getItem(ITEM_CONTAS)) || [];
 }
 
+function definirContaAtiva(loginData){
+    localStorage.setItem(ITEM_CONTA_ATIVA, JSON.stringify(loginData));
+}
