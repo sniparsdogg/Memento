@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
-main{
-    font-family: 'Ubuntu Regular', sans-serif;
+body{
+    position: relative;
+    font-family: 'Ubuntu Light', sans-serif;
     text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
     justify-items: center;
     margin: auto 0;
-
     height: 720px;
     width: 1280px;
 
@@ -20,7 +20,6 @@ main{
     height: 15%;
     justify-items: center;
     align-items: center;
-
     border-bottom: 0.5vw solid black;
 
 }
@@ -28,11 +27,16 @@ main{
 #titulo {
     float: left;
     margin-top: auto;
+    margin-left: 50px;
     font-size: 75px;
 }
 
 #nav-links {
-    height: 17%;
+    display: inline-flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 #nav-links>a {
@@ -40,7 +44,7 @@ main{
     height: 80px;
     justify-items: center;
     align-items: center;
-
+    padding: 13px;
     border: 0.25vw solid black;
 }
 
@@ -48,3 +52,23 @@ img {
     height: 90%;
 }
 
+.vazio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto auto auto;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.vazio .textoVazio{
+    margin: 10px auto -35px;
+}
+
+.importar .botao{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
