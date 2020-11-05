@@ -1,0 +1,8 @@
+.importarOpcoes {
+    display: inline-block;
+}
+
+.importarOpcoes img{
+    width: 200px;
+    margin: 50px;
+}
