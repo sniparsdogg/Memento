@@ -1,16 +1,11 @@
-.ficheiros{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 50px;
-}
+
 
 nav{
     border-bottom: none !important;
 }
 
 .pasta{
-    margin: auto 20px;;
+    margin: auto 20px;
     font-family: "Ubuntu";
     font-size:20px;
     position: relative;
@@ -25,19 +20,20 @@ nav{
     padding: auto 25px;
 }
 
+#todas{
+    width: 100px;
+    height: 60px;
+}
 
-.foto{
-    margin: auto 20px;
-    font-family: "Ubuntu";
-    font-size:20px;
-    position: relative;
-    display: block;
-    background-image: url('../images/photo.png');
-    background-size: 250px;
-    background-repeat: no-repeat;
-    width:250px;
-    max-width: 250px;
-    height: 225px;
-    text-align: center;
-    padding: auto 25px;
+label {
+    font-size: 55px;
+    margin-right: 40px;
+}
+
+
+.submeter{
+    position: fixed;
+    top: calc(720px - 200px);
+    left: calc(1280px - 200px);
+}
 }

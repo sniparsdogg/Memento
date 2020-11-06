@@ -5,19 +5,21 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="stylesheets/default.css">
-        <link rel="stylesheet" href="stylesheets/interface_importar.css">
+        <link rel="stylesheet" href="stylesheets/memento.css">
 
         <title>MEMENTO</title>
     </head>
 
     <body>
-        <nav>
-            <button type="button" class="retroceder" onclick="window.location.href='/importar_local.html'"><img src="images/leftarrow.png"></button>
-            <h1 class="titulo">Zoo 2020</h1>
-            <div class="spacer"></div>
-            <input id="todas" type="checkbox"
-                name="TodasSelecionadas" value="1">
-            <label for="boxTodas">Todas</label>
+        <nav class="barraSuperior">
+            <h1 class="titulo"> Memento </h1>
+            <div class="spacer"> </div>
+            <section id="nav-links">
+                <a href="ajuda.html"><img src="images/ajuda.png"></a>
+                <a href="criaralbum.html"><img src="images/criarAlbum.png"></a>
+                <a href="procurar.html"><img src="images/lupa.png" height="50px" width="70px"></a>
+                <a href="sair.html"><img src="images/sair.png"></a>
+            </section>
         </nav>
 
         <main>
@@ -32,11 +34,10 @@
                 <button type="button" value="8" class="foto"></button>
                 <button type="button" value="9" class="foto"></button>
             </section>
-
-            <button type="button" class="submeter" onclick="window.location.href='/mementoFotos.html'">
-                <img src="images/graytick.png" width="160px">
-            </button>
-
+            
+            <section class="importar">
+                <button type="button" class="botao" onclick="window.location.href='/importar.html'"><img src="images/importar.png" width="100px"></button>
+            </section>
         </main>
     </body>
 </html>

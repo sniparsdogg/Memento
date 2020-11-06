@@ -1,15 +1,25 @@
 .importarOpcoes {
-    display: inline-flex;
-    
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; 
 }
-.importarOpcoes>figcaption {
-    font-size: 45px;    /**não consegui por as figcaptions debaixo de cada figura,
-                            nem sei se devemos fazer com figcaption**/
+.importarOpcoes figcaption {
+    font-size: 45px;
+    font-weight: 600
 }
 
 .importarOpcoes img{
-    width: 175px;
+    width: 250px;
+    height: 240px;
     margin: 50px;
+}
+
+.importarOpcoes a {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
 }
 
 .retroceder {
@@ -18,21 +28,10 @@
     margin-left: 40px;
 }
 
-main {
-    width: 1280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 nav {
     border-bottom: none !important;
 }
 
 .prompt {
-    font-size: 50px;
-}
-
-.importarOpcoes>figcaption {
-    font-size: 45px;
+    font-size: 70px;
 }

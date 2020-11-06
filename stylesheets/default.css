@@ -19,7 +19,7 @@ nav {
     z-index: +1;
     background-color: white;
     top: 0;
-    width: 100%;
+    width: 1280px;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -47,7 +47,9 @@ button{
 }
 
 main{
+    max-width: 1280px;
     height: 50px;
+    position: relative;
 }
 
 .titulo {
@@ -56,4 +58,28 @@ main{
     margin-left: 40px;
     font-size: 75px;
     font-weight: 500;
+}
+
+.foto{
+    margin: auto 20px;
+    font-family: "Ubuntu";
+    font-size:20px;
+    position: relative;
+    display: block;
+    background-image: url('../images/photo.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width:200px;
+    max-width: 200px;
+    height: 225px;
+    text-align: center;
+    padding: auto 25px;
+}
+
+.galeria{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
 }
