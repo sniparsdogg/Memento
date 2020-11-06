@@ -33,6 +33,7 @@ label {
 
 .submeter{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    top: calc(720px - 200px);
+    left: calc(1280px - 200px);
+}
 }
