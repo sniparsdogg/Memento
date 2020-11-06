@@ -27,6 +27,8 @@ nav {
     justify-content: center;
     align-items: center;
     border-bottom: 0.5vw solid black;
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.2);
+
 }
 
 nav .spacer{
@@ -35,10 +37,12 @@ nav .spacer{
 
 nav button{
     width: 50px;
+    
 }
 
 nav button img{
     width: 80px;
+    
 }
 
 button{
@@ -90,6 +94,7 @@ main{
     height: 185px;
     text-align: center;
     padding: auto 25px;
+    
 }
 
 .pastaAutomatica{
@@ -106,6 +111,7 @@ main{
     height: 225px;
     text-align: center;
     padding: auto 25px;
+    
 }
 
 .galeria{
@@ -119,4 +125,15 @@ main{
 .pastaAutomatica .tituloAlbum{
     position: relative;
     left: -20px;
+}
+
+.importar {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: calc(720px - 150px);
+    left: calc(1280px - 150px);
 }

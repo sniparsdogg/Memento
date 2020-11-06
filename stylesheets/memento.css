@@ -41,17 +41,6 @@ img {
     margin: 10px auto -35px;
 }
 
-.importar {
-    display: flex;
-    font-size: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    top: calc(720px - 150px);
-    left: calc(1280px - 150px);
-}
-
 main{
     margin-top: 50px;
 }
