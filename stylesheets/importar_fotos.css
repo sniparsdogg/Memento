@@ -1,0 +1,19 @@
+#todas {
+    min-width: 55px;
+    min-height: 60px;
+    margin-right: 5px;
+}
+
+label {
+    font-size: 55px;
+}
+
+#BoxTodas {
+    display: inline-flex;
+}
+
+div>img {
+    height: 120px;
+    width: 145px;
+    margin: 25px;
+}
