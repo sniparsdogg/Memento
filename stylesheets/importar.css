@@ -1,9 +1,14 @@
 .importarOpcoes {
-    display: inline-block;
+    display: inline-flex;
+    
+}
+.importarOpcoes>figcaption {
+    font-size: 45px;    /**não consegui por as figcaptions debaixo de cada figura,
+                            nem sei se devemos fazer com figcaption**/
 }
 
 .importarOpcoes img{
-    width: 200px;
+    width: 175px;
     margin: 50px;
 }
 
@@ -26,4 +31,8 @@ nav {
 
 .prompt {
     font-size: 50px;
+}
+
+.importarOpcoes>figcaption {
+    font-size: 45px;
 }
