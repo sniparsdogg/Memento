@@ -92,9 +92,10 @@ function fazerLogin() {
                 alert("O seu Login foi executado com sucesso!");
 
                 formulario.reset();
-                window.location.href = "memento.html";
+                window.location.href = determinarMainMenu();
         } else {
             alert("Username ou Password incorreta!");
         }
     }
 }
+

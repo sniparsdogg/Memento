@@ -12,6 +12,7 @@ body{
     padding-top: 170px;
     height: calc(720px - 170px);
     width: 1280px;
+    border: 1px solid black;
 }
 
 nav {
@@ -52,8 +53,9 @@ button{
 
 main{
     max-width: 1280px;
-    height: 50px;
+    height: calc(720px - 170px);
     position: relative;
+    overflow: hidden;
 }
 
 .titulo {
