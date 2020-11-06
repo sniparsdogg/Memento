@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="stylesheets/default.css">
+        <link rel="stylesheet" href="stylesheets/adicionar_ctg.css">
+
+        <title>MEMENTO</title>
+    </head>
+
+    <header>
+        <nav>
+            <button type="button" class="retroceder" onclick="window.location.href='criaralbum.html'"><img src="images/leftarrow.png"></button>
+            <h1 class="titulo">Insira as categorias:</h1>
+            <div class="spacer"></div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="opcoesCategoria">
+                <form id="frmCtg" method="post">
+                    <input type="text" id="categorias" 
+                        name="categorias" placeholder="Separe as categorias por vírgulas (,)" required>
+                    <div class="detetor">
+                        <input id="detetorFts" type="checkbox"
+                            name="detetorFts" value="1">
+                        <label for="boxDet">Detetar e evitar fotos duplicadas?</label>
+                    </div><br>
+                    <button type="button" class="concluido" onclick="window.location.href='.html'"><img id="check" src="images/greentick.png"></button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
