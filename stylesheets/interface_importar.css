@@ -1,0 +1,22 @@
+.ficheiros{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.pasta{
+    margin: auto 20px;;
+    font-family: "Ubuntu";
+    font-size:20px;
+    position: relative;
+    display: block;
+    background-image: url('../images/ficheiro.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    width:250px;
+    max-width: 250px;
+    height: 225px;
+    text-align: center;
+    padding: auto 25px;
+}

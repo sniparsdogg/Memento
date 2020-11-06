@@ -12,18 +12,44 @@ body{
     margin: auto 0;
     height: 720px;
     width: 1280px;
-
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
     margin: auto;
     height: 15%;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     border-bottom: 0.5vw solid black;
     width: 100%
 }
 
+nav .spacer{
+    flex-grow: 1;
+}
+
+nav button{
+    width: 50px;
+}
+
+nav button img{
+    width: 80px;
+}
+
+button{
+    background: none;
+    border: 0;
+}
+
 main{
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.titulo {
+    font-family: "Ubuntu", sans-serif;
+    float: left;
+    margin-left: 40px;
+    font-size: 75px;
+    font-weight: 500;
 }
