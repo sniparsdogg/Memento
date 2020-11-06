@@ -76,10 +76,47 @@ main{
     padding: auto 25px;
 }
 
+.pasta{
+    margin: auto 20px;
+    font-family: "Ubuntu";
+    font-size:20px;
+    position: relative;
+    display: block;
+    background-image: url('../images/ficheiro.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width:200px;
+    max-width: 200px;
+    height: 185px;
+    text-align: center;
+    padding: auto 25px;
+}
+
+.pastaAutomatica{
+    margin: auto 20px;
+    font-family: "Ubuntu";
+    font-size:20px;
+    position: relative;
+    display: block;
+    background-image: url('../images/ficheiroAutomatico.png');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    width:250px;
+    max-width: 250px;
+    height: 225px;
+    text-align: center;
+    padding: auto 25px;
+}
+
 .galeria{
     position: relative;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 50px;
+}
+
+.pastaAutomatica .tituloAlbum{
+    position: relative;
+    left: -20px;
 }
