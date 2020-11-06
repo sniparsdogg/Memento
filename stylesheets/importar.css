@@ -6,3 +6,22 @@
     width: 200px;
     margin: 50px;
 }
+
+.back {
+    float: left;
+    margin-top: 7px;
+    margin-left: 40px;
+}
+
+main {
+    height: 720px;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.prompt {
+    font-size: 50px;
+}
