@@ -75,24 +75,14 @@ function fazerLogin() {
 
     if (loginValid) {
         let loginData = new Login(getUsernameLoginForm(), getPasswordLoginForm());
-        //
-        // for (var x = 0; x <= localStorage.length; x++) {
-        //
-        //     if (x == localStorage.length) {
-        //         alert('Username ou Password incorreta!');
-        //         break;
-        //     }
-        //
-        //     let user = JSON.parse(localStorage.getItem("User" + String(x)));
+        if ((loginData.username === "LuisAndre" && loginData.password === "xpto1234")
+            || (loginData.username === "JoaoFilipe32" && loginData.password === "j0a0f1x3")) {
 
-            if ((loginData.username === "LuisAndre" && loginData.password === "xpto1234")
-                || (loginData.username === "JoaoFilipe32" && loginData.password === "j0a0f1x3")) {
+            definirContaAtiva(loginData);
+            alert("O seu Login foi executado com sucesso!");
 
-                definirContaAtiva(loginData);
-                alert("O seu Login foi executado com sucesso!");
-
-                formulario.reset();
-                window.location.href = determinarMainMenu();
+            formulario.reset();
+            window.location.href = determinarMainMenu();
         } else {
             alert("Username ou Password incorreta!");
         }

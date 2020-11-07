@@ -2,6 +2,7 @@
 
 const BOTAO_SUBMETER = "botaoSubmeter";
 
+
 window.addEventListener("load", principal);
 
 
@@ -12,13 +13,14 @@ function principal(){
 function defineEventHandlersParaElementsHTML() {
 
     document.getElementById(BOTAO_SUBMETER).
-        addEventListener("click",importarFotos);
+    addEventListener("click", criarPasta);
+
+    // document.getElementsByClassName()
 }
 
-function importarFotos(){
-    let fotos = [1,2,3,4,5];
-    addedFiles.push(fotos);
-    localStorage.setItem(ITEM_FICHEIROS_ADICIONADOS, JSON.stringify(addedFiles));
+function criarPasta(){
+    let pastaCriada = "ZOO 2020";
+    createdFolders.push(pastaCriada);
+    localStorage.setItem(ITEM_PASTAS_CRIADAS, JSON.stringify(createdFolders));
     window.location.href = determinarMainMenu();
 }
-function
