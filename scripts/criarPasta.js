@@ -15,6 +15,7 @@ function defineEventHandlersParaElementsHTML() {
     document.getElementById(BOTAO_SUBMETER).
     addEventListener("click", criarPasta);
 
+    $(BOTAO_RETROCEDER_MENU).attr(window.location.href, determinarMainMenu)
     // document.getElementsByClassName()
 }
 

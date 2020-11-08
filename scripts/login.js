@@ -79,7 +79,6 @@ function fazerLogin() {
             || (loginData.username === "JoaoFilipe32" && loginData.password === "j0a0f1x3")) {
 
             definirContaAtiva(loginData);
-            alert("O seu Login foi executado com sucesso!");
 
             formulario.reset();
             window.location.href = determinarMainMenu();

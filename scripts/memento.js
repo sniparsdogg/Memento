@@ -6,4 +6,7 @@ function selectPhoto(){
 
 $(document).ready(function() {
     $(classFotos).click(selectPhoto)
+    $(BOTAO_RETROCEDER_MENU).click(function(){
+        window.location.href = determinarMainMenu();
+    })
 });

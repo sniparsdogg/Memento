@@ -18,10 +18,12 @@
 
     <body>
         <nav>
-            <button type="button" class="retroceder" onclick="window.location.href='importar_local.html'"><img src="images/leftarrow.png"></button>
+            <button type="button" class="retroceder" onclick="window.location.href='importar_local.html'">
+                <img src="images/leftarrow.png">
+            </button>
             <h1 class="titulo">Zoo 2020</h1>
             <div class="spacer"></div>
-            <input id="todas" type="checkbox"
+            <input id="boxTodas" type="checkbox"
                 name="TodasSelecionadas" value="1">
             <label for="boxTodas">Todas</label>
         </nav>
@@ -39,14 +41,9 @@
                 <button type="button" value="9" class="foto"></button>
             </section>
 
-            <button type="button" id="botaoSubmeter"">
-                <img src="images/graytick.png" width="160px">
+            <button type="button" id="botaoSubmeter">
+                <img id="imgSubmeter" src="images/graytick.png" width="160px">
             </button>
-
-            <!-- <button type="button" class="submeter" onclick="importarFotos()'">
-                <img src="images/graytick.png" width="160px">
-            </button>
-             -->
 
         </main>
     </body>

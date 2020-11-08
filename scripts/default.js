@@ -6,6 +6,7 @@ const ITEM_CONTAS = "accountDatabase";
 const ITEM_CONTA_ATIVA = "activeAccount";
 const ITEM_FICHEIROS_ADICIONADOS = "addedFiles";
 const ITEM_PASTAS_CRIADAS = "createdFolders";
+const BOTAO_RETROCEDER_MENU = "#retrocederMenu"
 
 //------------------------//
 
@@ -22,6 +23,7 @@ function principal() {
     activeAccount = obterContaAtiva();
     addedFiles = obterFicheirosImportados();
     createdFolders = obterPastasCriadas();
+
 }
 
 

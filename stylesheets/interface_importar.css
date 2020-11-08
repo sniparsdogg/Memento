@@ -1,10 +1,8 @@
-
-
 nav{
     border-bottom: none !important;
 }
 
-#todas{
+#boxTodas{
     width: 100px;
     height: 60px;
 }
@@ -15,9 +13,8 @@ label {
 }
 
 
-.submeter{
+#botaoSubmeter{
     position: fixed;
     top: calc(720px - 200px);
     left: calc(1280px - 200px);
-}
 }
