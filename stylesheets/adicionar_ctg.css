@@ -21,9 +21,14 @@
     margin-left: 35px;
 }
 
-#detetorFts {
+#detetorFts , #limiteFts {
     min-width: 40px;
     min-height: 40px;
+}
+
+#limite {
+    min-width: 35px;
+    min-height: 35px;
 }
 
 label {
