@@ -58,6 +58,6 @@ main .textoImportar{
     border: 3px solid black;
 }
 
-.botao {
+.more>button {
     height: 70px;
 }
