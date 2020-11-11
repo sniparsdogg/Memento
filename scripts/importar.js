@@ -25,10 +25,9 @@ function modificarBotaoSubmeter(){
             existeSelected = true
         }
     })
+    $(IMG_SUBMETER).attr("src","images/graytick.png").unbind("click");
     if(existeSelected){
         $(IMG_SUBMETER).attr("src","images/greentick.png").click(importarFotos);
-    } else {
-        $(IMG_SUBMETER).attr("src","images/graytick.png").unbind("click");
     }
 }
 
@@ -40,14 +39,14 @@ function selecionarTodas() {
     }
     modificarBotaoSubmeter();
 }
+
 function importarFotos(){
-    let fotos = [];
     $(classFotos).each(function(){
         if($(this).hasClass("selected")){
-            fotos.push($(this).html());
+            let foto = new Photo($(this).attr('value'), $("img", this).attr('src'));
+            addedFiles.push(foto);
         }
     })
-    addedFiles.push(fotos);
     localStorage.setItem(ITEM_FICHEIROS_ADICIONADOS, JSON.stringify(addedFiles));
     window.location.href = determinarMainMenu();
 }

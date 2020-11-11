@@ -1,5 +1,11 @@
 const classFotos = ".foto";
 
+function Photo(tags, src){
+    this.tags = tags;
+    this.src = src;
+}
+
+
 function selectPhoto(){
     $(this).toggleClass("selected")
 }
@@ -10,3 +16,4 @@ $(document).ready(function() {
         window.location.href = determinarMainMenu();
     })
 });
+

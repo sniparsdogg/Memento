@@ -68,7 +68,6 @@ main{
 
 .foto{
     margin: 20px;
-    font-size:20px;
     position: relative;
     display: block;
     background-image: url('../images/photo.png');
@@ -79,8 +78,18 @@ main{
     height: 160px;
     text-align: center;
     padding: auto 25px;
-    border: 1px solid black;
     border-radius: 20px;
+}
+
+.foto img{
+    width:200px;
+    max-width: 200px;
+    height: 160px;
+    text-align: center;
+    padding: auto 25px;
+    /* border-radius: 20px; */
+    position: relative;
+    left: -7px;
 }
 
 .pasta{
