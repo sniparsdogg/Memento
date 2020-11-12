@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
-body{
-    font-family: 'Ubuntu Light', sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 0;
-    padding-top: 170px;
-    height: calc(720px - 170px);
-    width: 1280px;
-    border: 5px solid black;
-}
-
 nav {
     position: fixed;
     z-index: +1;
@@ -29,8 +15,23 @@ nav {
     align-items: center;
     border-bottom: 0.5vw solid black;
     box-shadow: 0 10px 10px -2px rgba(0,0,0,.2);
-
 }
+
+
+body{
+    font-family: 'Ubuntu Light', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding-top: 170px;
+    height: calc(720px - 170px);
+    width: 1280px;
+    border: 5px solid black;
+}
+/* TODO: fix scrolling photos */
 
 nav .spacer{
     flex-grow: 1;
