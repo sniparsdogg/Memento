@@ -71,8 +71,6 @@ function definirContaAtiva(loginData){
 function determinarMainMenu(){
     if (addedFiles.length === 0) {
         return("memento.html")
-    } else if (createdFolders.length === 0){
-        return ("mementoFotos.html")
     }
     return ("mementoFotosAlbum.html");
 }
