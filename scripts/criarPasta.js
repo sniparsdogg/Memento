@@ -1,27 +1,36 @@
 "use strict";
 
-const BOTAO_SUBMETER = "botaoSubmeter";
+const FORM_PASTA = "frmAlbum"
+const BOTAO_AVANCAR = "#botaoAvancar"
+const TITULO_ALBUM = "tituloAlbum"
+const TEMP_TITLE = "tempTituloAlbum"
 
+let formulario = null;
+
+
+function getFormTitle(){
+    return formulario.elements[TITULO_ALBUM].value;
+}
 
 window.addEventListener("load", principal);
 
 
 function principal(){
+    formulario = document.forms[FORM_PASTA];
     defineEventHandlersParaElementsHTML();
+
 }
 
 function defineEventHandlersParaElementsHTML() {
+    $(BOTAO_AVANCAR).click(guardarNome);
 
-    document.getElementById(BOTAO_SUBMETER).
-    addEventListener("click", criarPasta);
-
-    $(BOTAO_RETROCEDER_MENU).attr(window.location.href, determinarMainMenu)
-    // document.getElementsByClassName()
+    $(BOTAO_RETROCEDER_MENU).click(determinarMainMenu)
 }
 
-function criarPasta(){
-    let pastaCriada = "ZOO 2020";
-    createdFolders.push(pastaCriada);
-    localStorage.setItem(ITEM_PASTAS_CRIADAS, JSON.stringify(createdFolders));
-    window.location.href = determinarMainMenu();
+function guardarNome(){
+    let formValid = formulario.reportValidity();
+    localStorage.setItem(TEMP_TITLE, getFormTitle());
+    if(formValid){
+        window.location.href = "adicionar_ctg.html";
+    }
 }

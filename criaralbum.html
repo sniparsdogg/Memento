@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="scripts/default.js"></script>
         <script src="scripts/memento.js"></script>
+        <script src="scripts/criarPasta.js"></script>
 
         <title>MEMENTO</title>
     </head>
@@ -27,12 +28,12 @@
                 <form id="frmAlbum" >
                     <input type="text" id="tituloAlbum" 
                         name="titulo" placeholder="Título" required>
-                    <button type="button" class="concluido" onclick="window.location.href='adicionar_ctg.html'"><img id="check" src="images/greentick.png"></button><br>
+                    <button type="button" id="botaoAvancar" class="concluido"><img id="check" src="images/greentick.png"></button><br>
                 </form>
                     <div class="automatizar">
                         <input id="auto" type="checkbox"
                             name="Automatizar" value="1">
-                        <label for="boxAuto">  Automatizar?</label>
+                        <label for="boxAuto">Automatizar?</label>
                     </div>
             </section>
         </main>

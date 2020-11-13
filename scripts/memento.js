@@ -1,3 +1,8 @@
+const SECCAO_FOTOS = "#galeriaFotos"
+const SECCAO_ALBUNS = "#galeriaAlbuns"
+const PASTA_AUTOMATICA = ".pastaAutomatica"
+
+
 const classFotos = ".foto";
 
 function Photo(tags, src){

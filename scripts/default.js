@@ -7,6 +7,10 @@ const ITEM_CONTA_ATIVA = "activeAccount";
 const ITEM_FICHEIROS_ADICIONADOS = "importedFiles";
 const ITEM_PASTAS_CRIADAS = "createdFolders";
 const BOTAO_RETROCEDER_MENU = "#retrocederMenu"
+const USERNAME = "loginUsername";
+const PASSWORD = "loginPass";
+const ALBUM_ABERTO = "albumAberto"
+
 
 //------------------------//
 
@@ -23,7 +27,6 @@ function principal() {
     activeAccount = obterContaAtiva();
     addedFiles = obterFicheirosImportados();
     createdFolders = obterPastasCriadas();
-
 }
 
 

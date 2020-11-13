@@ -6,8 +6,6 @@
 
 const FORMULARIO_LOGIN = "frmLogin";
 const BOTAO_LOGIN = "btnLogin";
-const USERNAME = "loginUsername";
-const PASSWORD = "loginPass";
 
 /* ------------------------------------------------------------------------- */
 /*                                                         VARIÁVEIS GLOBAIS */
@@ -70,8 +68,6 @@ function getPasswordLoginForm() {
 function fazerLogin() {
 
     let loginValid = formulario.reportValidity();
-    let username = null;
-    let senha = null;
 
     if (loginValid) {
         let loginData = new Login(getUsernameLoginForm(), getPasswordLoginForm());
