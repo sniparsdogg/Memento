@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+#interface{
+    /* border: 5px solid black; */
+}
 
 nav {
     position: fixed;
@@ -153,4 +156,8 @@ main{
 
 .selected{
     box-shadow: 0 0px 10px 15px rgba(92,168,255, 0.8);
+}
+
+.escondido{
+    display: none;
 }

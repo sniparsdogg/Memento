@@ -9,10 +9,10 @@ const TAGS_ALBUM = "categorias"
 
 let formulario = null;
 
-function Album(id, title, tags){
+function Album(id, title, fotos){
     this.id = id;
     this.title = title;
-    this.tags = tags;
+    this.fotos= fotos;
 
 }
 
@@ -48,8 +48,31 @@ function defineEventHandlersParaElementsHTML() {
 }
 
 function criarPasta(){
-    let pasta = new Album(getID(), getTemporaryTitle(), getTags());
+    let pasta = new Album(getID(), getTemporaryTitle(), getTaggedFiles());
     createdFolders.push(pasta);
     localStorage.setItem(ITEM_PASTAS_CRIADAS, JSON.stringify(createdFolders));
     window.location.href = determinarMainMenu();
+}
+
+function getTaggedFiles(){
+    let matchingFiles = [];
+    let thisTags = getTags();
+    let filesToAdd = JSON.parse(JSON.stringify(addedFiles));
+    let index = 0;
+    filesToAdd.forEach(foto => {
+        let fotoTags = foto.tags.split(" ");
+        let matchesTags = false;
+        fotoTags.forEach(tagFoto =>{
+            thisTags.forEach(tagForm => {
+                if(tagFoto == tagForm){
+                    matchesTags = true;
+                }      
+            })
+        })
+        if(matchesTags){
+            matchingFiles.push(foto)
+        }
+    })
+    console.log(matchingFiles);
+    return matchingFiles;
 }

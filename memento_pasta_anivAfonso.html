@@ -8,7 +8,11 @@
         <!-- <link rel="stylesheet" href="stylesheets/interface_importar.css">~ -->
         <link rel="stylesheet" href="stylesheets/memento.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="scripts/default.js"></script>
+        <script src="scripts/apresentarFotosPasta.js"></script>
+        <script src="scripts/memento.js"></script>
+        <script src="scripts/album.js"></script>
 
         <title>MEMENTO</title>
     </head>
@@ -16,43 +20,30 @@
     <body>
         <nav>
             <button type="button" class="retroceder" onclick="window.location.href='mementoFotosAlbum.html'"><img src="images/leftarrow.png"></button>
-            <h1 style="font-size: 60px" class="titulo">Aniversário do Afonso</h1>
+            <section id="tituloAlbum"></section>
             <div class="spacer"></div>
             <section id="nav-links">
                 <a href="ajuda.html"><img src="images/ajuda.png"></a>
-                <a href="importar.html"><img src="images/importar.png"></a>
+                <a href="importar_para_album.html"><img src="images/importar.png"></a>
                 <a href="procurar.html"><img src="images/lupa.png" height="50px" width="70px"></a>
-                <a href="menu.html"><img src="images/menu.png"></a>
+                <a href="partilhar.html"><img src="images/partilhar.png"></a>
+                <!-- TODO: Add album menus to share, invite to album, etc -->
             </section>
         </nav>
 
         <main>
-            <section class="galeria">
-                <button type="button" value="1" class="foto"></button>
-                <button type="button" value="2" class="foto"></button>
-                <button type="button" value="3" class="foto"></button>
-                <button type="button" value="4" class="foto"></button>
-                <button type="button" value="5" class="foto"></button>
-                <button type="button" value="6" class="foto"></button>
-                <button type="button" value="7" class="foto"></button>
-                <button type="button" value="8" class="foto"></button>
-                <button type="button" value="9" class="foto"></button>
-            </section>
+            <section id="galeriaFotos" class="galeria">
 
-            <!-- <section class="importar">
-                <button type="button" class="botao" onclick="window.location.href='/importar.html'">
-                    <img src="images/importar.png" width="100px">
-                </button>
-            </section> -->
+            </section>
             
-            <section class="more">
-                <button type="button" class="botao" onclick="window.location.href=''">
+            <section class="more escondido">
+                <button type="button" class="botao apagar">
                     <img src="images/apagar.png">
                 </button>
                 <button type="button" class="botao" onclick="window.location.href='partilhar.html'">
                     <img src="images/partilhar.png">
                 </button>
-                <button type="button" class="botao" onclick="window.location.href=''">
+                <button type="button" class="botao" >
                     <img src="images/menu.png">
                 </button>
             </section>

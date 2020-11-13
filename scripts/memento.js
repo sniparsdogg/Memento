@@ -5,7 +5,8 @@ const PASTA_AUTOMATICA = ".pastaAutomatica"
 
 const classFotos = ".foto";
 
-function Photo(tags, src){
+function Photo(id, tags, src){
+    this.id = id;
     this.tags = tags;
     this.src = src;
 }

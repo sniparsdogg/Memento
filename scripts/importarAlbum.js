@@ -41,14 +41,16 @@ function selecionarTodas() {
 }
 
 function importarFotos(){
+    let albumAberto = pastaAUsar(getFolderID());
     $(classFotos).each(function(){
         if($(this).hasClass("selected")){
             let foto = new Photo($(this).attr('id'), $(this).attr('value'), $("img", this).attr('src'));
-            addedFiles.push(foto);
+            albumAberto.fotos.push(foto);
         }
     })
-    localStorage.setItem(ITEM_FICHEIROS_ADICIONADOS, JSON.stringify(addedFiles));
-    window.location.href = determinarMainMenu();
+    createdFolders.splice(getFolderID(),1, albumAberto);
+    updateFoldersLocalStorage(createdFolders);
+    window.history.back();
 }
 
 

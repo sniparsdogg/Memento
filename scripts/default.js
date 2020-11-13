@@ -10,6 +10,7 @@ const BOTAO_RETROCEDER_MENU = "#retrocederMenu"
 const USERNAME = "loginUsername";
 const PASSWORD = "loginPass";
 const ALBUM_ABERTO = "albumAberto"
+const CLASS_SELECIONADO = ".selected"
 
 
 //------------------------//
@@ -29,6 +30,18 @@ function principal() {
     createdFolders = obterPastasCriadas();
 }
 
+function getFolderID(){
+    return localStorage.getItem(ALBUM_ABERTO); 
+}
+
+function pastaAUsar(id){
+    for(let i in createdFolders){
+        if(createdFolders[i].id == id){
+            console.log(createdFolders[i])
+            return createdFolders[i]
+        }
+    }
+}
 
 function obterContaAtiva(){
     return JSON.parse(localStorage.getItem(ITEM_CONTA_ATIVA)) || [];
@@ -44,6 +57,10 @@ function obterFicheirosImportados(){
 
 function obterPastasCriadas(){
     return JSON.parse(localStorage.getItem(ITEM_PASTAS_CRIADAS)) || [] 
+}
+
+function updateFoldersLocalStorage(folder){
+    localStorage.setItem(ITEM_PASTAS_CRIADAS, JSON.stringify(folder));
 }
 
 function definirContaAtiva(loginData){
