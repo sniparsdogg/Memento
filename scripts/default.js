@@ -9,8 +9,9 @@ const ITEM_PASTAS_CRIADAS = "createdFolders";
 const BOTAO_RETROCEDER_MENU = "#retrocederMenu"
 const USERNAME = "loginUsername";
 const PASSWORD = "loginPass";
-const ALBUM_ABERTO = "albumAberto"
-const CLASS_SELECIONADO = ".selected"
+const ALBUM_ABERTO = "albumAberto";
+const CLASS_SELECIONADO = ".selected";
+const TAGS_ADICIONADAS = "addedTags";
 
 
 //------------------------//
@@ -41,6 +42,10 @@ function pastaAUsar(id){
             return createdFolders[i]
         }
     }
+}
+
+function obterTagsAdicionadas(){
+    return JSON.parse(localStorage.getItem(TAGS_ADICIONADAS)) || [];
 }
 
 function obterContaAtiva(){

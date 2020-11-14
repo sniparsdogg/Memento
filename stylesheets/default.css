@@ -19,7 +19,6 @@ nav {
 
 
 body{
-    /* position: fixed; */
     font-family: 'Ubuntu Light', sans-serif;
     text-align: center;
     justify-content: center;
@@ -27,7 +26,6 @@ body{
     align-items: center;
     justify-items: center;
     margin: 0;
-    /* padding-top: 170px;*/
     height: 720px;
     width: 1280px;
     border: 5px solid black;
@@ -41,7 +39,7 @@ nav .spacer{
 
 nav button{
     width: 50px;
-    
+    padding-right: 100px;
 }
 
 nav button img{
@@ -72,7 +70,6 @@ main{
     margin: 20px;
     position: relative;
     display: block;
-    background-image: url('../images/photo.png');
     background-size: 200px;
     background-repeat: no-repeat;
     width:200px;
@@ -89,9 +86,10 @@ main{
     height: 160px;
     text-align: center;
     padding: auto 25px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     position: relative;
     left: -7px;
+    object-fit: cover;
 }
 
 .pasta{
