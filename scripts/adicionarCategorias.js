@@ -64,7 +64,7 @@ function getTaggedFiles(){
         let matchesTags = false;
         fotoTags.forEach(tagFoto =>{
             thisTags.forEach(tagForm => {
-                if(tagFoto == tagForm){
+                if(tagFoto == tagForm.trimLeft()){
                     matchesTags = true;
                 }      
             })

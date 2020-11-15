@@ -17,48 +17,54 @@
 
     <body>
         <nav>
-            <button type="button" id="retrocederMenu" class="retroceder"><img src="images/leftarrow.png"></button>
+            <button type="button" id="retrocederMenu" class="retroceder">
+                <img src="images/leftarrow.png">
+            </button>
             <div class="spacer"></div>
             <h1 class="prompt">Como deseja partilhar o seu álbum?</h1>
             <div class="spacer"></div>
         </nav>
         <main>
             <section class="partilharOpcoes">
-                <a href="facebook">
+                <button type="button" class="rede-social">
                     <figure>
                         <img src="images/facebook.png">
                         <figcaption>Facebook</figcaption>
                     </figure>
-                </a>
+                </button>
 
-                <a href="twitter">
+                <button type="button" class="rede-social">
                     <figure>
                         <img src="images/twitter.png">
                         <figcaption>Twitter</figcaption>
                     </figure>
-                </a>
+                </button>
 
-                <a href="sms">
+                <button type="button" class="rede-social">
                     <figure>
                         <img src="images/sms.png">
                         <figcaption>SMS</figcaption>
                     </figure>
-                </a>
+                </button>
 
-                <a href="email">
+
+                <button type="button" class="rede-social">
                     <figure>
                         <img src="images/email.png">
                         <figcaption>E-mail</figcaption>
                     </figure>
-                </a>
-
-
+                </button>
 
             </section>
 
-            <section id="sucesso" class="escondido">
-                <h1>Partilhado com sucesso!</h1>
-            </section>
+            
+            
         </main>
+        <!-- Pop-up de sucesso -->
+        <div id="sucesso" class="modal">
+            <div class="modal-content">
+                <img class="loading" src="images/loading.gif">
+            </div>
+        </div>
     </body>
 </html>

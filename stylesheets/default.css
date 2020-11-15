@@ -92,6 +92,10 @@ main{
     object-fit: cover;
 }
 
+.foto:focus { 
+    outline: none; 
+}
+
 .pasta{
     margin: auto 20px;
     font-family: "Ubuntu";
