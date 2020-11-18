@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="stylesheets/default.css">
+        <link rel="stylesheet" href="stylesheets/memento.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/default.js"></script>
+        <script src="scripts/apresentarFotosPasta.js"></script>
+        <script src="scripts/memento.js"></script>
+        <script src="scripts/album.js"></script>
+
+        <title>MEMENTO</title>
+    </head>
+
+    <body>
+        <div id="interface">
+            <nav>
+                <button type="button" class="retroceder" onclick="window.location.href='mementoFotosAlbum.html'"><img src="images/leftarrow.png"></button>
+                <section id="tituloAlbum"></section>
+                <div class="spacer"></div>
+                <section id="nav-links">
+                    <a href="ajuda.html"><img src="images/ajuda.png"></a>
+                    <a href="importar_para_album.html"><img src="images/importar.png"></a>
+                    <a href="procurar.html"><img src="images/lupa.png" height="50px" width="70px"></a>
+                    <a href="partilhar.html"><img src="images/partilhar.png"></a>
+                    <!-- TODO: Add album menus to share, invite to album, etc -->
+                </section>
+            </nav>
+
+            <main>
+                <div id="galeria">
+                <section id="galeriaFotos" class="galeria">
+
+                </section>
+                
+                <section class="more escondido">
+                    <button type="button" class="botao apagar">
+                        <img src="images/apagar.png">
+                    </button>
+                    <button type="button" class="botao" onclick="window.location.href='partilhar.html'">
+                        <img src="images/partilhar.png">
+                    </button>
+                    <button type="button" class="botao" >
+                        <img src="images/menu.png">
+                    </button>
+                </section>
+            </div>  
+            </main>
+        </div>
+        
+    </body>
+</html>

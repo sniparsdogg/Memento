@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="stylesheets/default.css">
+        <link rel="stylesheet" href="stylesheets/convidar.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/default.js"></script>
+        <script src="scripts/memento.js"></script>
+
+        <title>MEMENTO</title>
+    </head>
+
+    <header>
+        <nav>
+            <button type="button" id="retrocederMenu" class="retroceder"><img src="images/leftarrow.png"></button>
+            <h1 class="titulo">Quem deseja convidar?</h1>
+            <div class="spacer"></div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="opcoesConvite">
+                <form id="frmConvite" >
+                    <select id="selConvidado" name="convidade" placeholder="Escolha um amigo">
+                        <option value="João">João</option>
+                        <option value="Giestas">Giestas</option>
+                        <option value="Francisco">Francisco</option>
+                        <option value="Outro">Outro...</option>
+                    </select>
+                </form>
+                <div class="editar">
+                    <input id="checkEdicao" type="checkbox"
+                        name="Edicao" value="1">
+                    <label for="boxEdicao">Permitir que edite este álbum?</label>
+                </div>
+            </section>
+            <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
+        </main>
+    </body>
+</html>

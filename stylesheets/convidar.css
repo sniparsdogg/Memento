@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+#frmConvite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+
+}
+
+#frmConvite #selConvidado {
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    width: 50%;
+    margin: 50px 0;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    /* margin-left: 170px; */
+}
+
+#check {
+    height: 90px;
+    margin-left: 35px;
+}
+
+#checkEdicao {
+    min-width: 40px;
+    min-height: 40px;
+}
+
+label {
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+.editar {
+    display: inline-flex;
+}
+
+section {
+    text-align: center;
+}
