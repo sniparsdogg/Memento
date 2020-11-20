@@ -13,7 +13,7 @@ const BOTAO_LOGIN = "btnLogin";
 
 let formulario = null;
 
-function Login(username, password){
+function Login(username, password, batchFotos, albuns){
     this.username = username;
     this.password = password;
 }
@@ -75,7 +75,6 @@ function fazerLogin() {
             || (loginData.username === "JoaoFilipe32" && loginData.password === "j0a0f1x3")) {
 
             definirContaAtiva(loginData);
-
             formulario.reset();
             window.location.href = determinarMainMenu();
         } else {

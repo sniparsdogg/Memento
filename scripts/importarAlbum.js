@@ -27,7 +27,7 @@ function modificarBotaoSubmeter(){
     })
     $(IMG_SUBMETER).attr("src","images/graytick.png").unbind("click");
     if(existeSelected){
-        $(IMG_SUBMETER).attr("src","images/greentick.png").click(importarFotos);
+        $(IMG_SUBMETER).attr("src","images/greentick.png").click(importarFotosAlbum);
     }
 }
 
@@ -40,7 +40,7 @@ function selecionarTodas() {
     modificarBotaoSubmeter();
 }
 
-function importarFotos(){
+function importarFotosAlbum(){
     let albumAberto = pastaAUsar(getFolderID());
     $(classFotos).each(function(){
         if($(this).hasClass("selected")){
@@ -48,8 +48,13 @@ function importarFotos(){
             albumAberto.fotos.push(foto);
         }
     })
-    createdFolders.splice(getFolderID(),1, albumAberto);
-    updateFoldersLocalStorage(createdFolders);
+    activeAccountFolders.splice(getFolderID(),1, albumAberto);
+    if(activeAccount.username == "LuisAndre"){
+        reporAlbunsLuis(albumAberto);
+    } else if(activeAccount.username == "JoaoFilipe32"){
+        reporAlbunsJoao(albumAberto);
+    }
+    atualizarContaAtiva();
     window.history.back();
 }
 

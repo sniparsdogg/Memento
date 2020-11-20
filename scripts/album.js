@@ -36,8 +36,13 @@ function eliminarFoto(foto){
     let fileToDelete = fotoSelecionada(fotosPasta, foto)
     const indexFoto = fotosPasta.indexOf(fileToDelete);
     fotosPasta.splice(indexFoto, 1);
-    createdFolders.splice(getFolderID(),1, novaPasta);
-    updateFoldersLocalStorage(createdFolders)
+    activeAccountFolders.splice(getFolderID(),1, novaPasta);
+    if(activeAccount.username == "LuisAndre"){
+        reporAlbunsLuis(novaPasta);
+    } else if(activeAccount.username == "JoaoFilipe32"){
+        reporAlbunsJoao(novaPasta);
+    }
+    atualizarContaAtiva();
 }
 
 function fotoSelecionada(pasta, id){

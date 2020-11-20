@@ -10,13 +10,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="scripts/default.js"></script>
         <script src="scripts/memento.js"></script>
+        <script src="scripts/convidar.js"></script>
 
         <title>MEMENTO</title>
     </head>
 
     <header>
         <nav>
-            <button type="button" id="retrocederMenu" class="retroceder"><img src="images/leftarrow.png"></button>
+            <button type="button" id="botaoRetroceder" class="retroceder"><img src="images/leftarrow.png"></button>
             <h1 class="titulo">Quem deseja convidar?</h1>
             <div class="spacer"></div>
         </nav>
@@ -26,9 +27,9 @@
             <section class="opcoesConvite">
                 <form id="frmConvite" >
                     <select id="selConvidado" name="convidade" placeholder="Escolha um amigo">
-                        <option value="João">João</option>
-                        <option value="Giestas">Giestas</option>
-                        <option value="Francisco">Francisco</option>
+                        <option value="JoaoFilipe32">João (@JoaoFilipe32)</option>
+                        <option value="GiestasTeste">Giestas (@FranciscoGiestas)</option>
+                        <option value="FranciscoTeste">Francisco (@FranciscoTeste)</option>
                         <option value="Outro">Outro...</option>
                     </select>
                 </form>
@@ -39,6 +40,12 @@
                 </div>
             </section>
             <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
+                    <!-- Pop-up de sucesso -->
+            <div id="sucesso" class="modal">
+                <div class="modal-content">
+                    <img class="loading" src="images/loading.gif">
+                </div>
+            </div>
         </main>
     </body>
 </html>

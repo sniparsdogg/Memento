@@ -13,7 +13,6 @@ function Album(id, title, fotos){
     this.id = id;
     this.title = title;
     this.fotos= fotos;
-
 }
 
 function getTemporaryTitle(){
@@ -29,13 +28,14 @@ function getTags(){
 }
 
 function getID(){
-    return createdFolders.length
+    return activeAccount.albuns.length;
 }
 
 window.addEventListener("load", principal);
 
 
 function principal(){
+
     formulario = document.forms[FORM_CATEGORIAS];
     defineEventHandlersParaElementsHTML();
 }
@@ -51,6 +51,11 @@ function criarPasta(){
     let pasta = new Album(getID(), getTemporaryTitle(), getTaggedFiles());
     createdFolders.push(pasta);
     localStorage.setItem(ITEM_PASTAS_CRIADAS, JSON.stringify(createdFolders));
+    if(activeAccount.username == "LuisAndre"){
+        atualizarAlbunsLuis(pasta);
+    } else if(activeAccount.username == "JoaoFilipe32"){
+        atualizarAlbunsJoao(pasta);
+    }
     window.location.href = determinarMainMenu();
 }
 

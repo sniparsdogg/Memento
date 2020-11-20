@@ -41,13 +41,22 @@ function selecionarTodas() {
 }
 
 function importarFotos(){
+    let newFiles = [];
     $(classFotos).each(function(){
         if($(this).hasClass("selected")){
             let foto = new Photo($(this).attr('id'), $(this).attr('value'), $("img", this).attr('src'));
-            addedFiles.push(foto);
+            newFiles.push(foto);
         }
     })
+    for (let i = 0; i < newFiles.length; i++){
+        addedFiles.push(newFiles[i]);
+    }
     localStorage.setItem(ITEM_FICHEIROS_ADICIONADOS, JSON.stringify(addedFiles));
+    if(activeAccount.username == "LuisAndre"){
+        atualizarFotosLuis(newFiles);
+    } else if(activeAccount.username == "JoaoFilipe32"){
+        atualizarFotosJoao(newFiles);
+    }
     window.location.href = determinarMainMenu();
 }
 

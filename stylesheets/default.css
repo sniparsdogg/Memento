@@ -33,7 +33,7 @@ body{
 }
 /* TODO: fix scrolling photos */
 
-nav .spacer{
+.spacer{
     flex-grow: 1;
 }
 
