@@ -1,19 +1,28 @@
 "use strict";
 
 const BARRA_MORE = ".more"
-const BOTAO_APAGAR = ".apagar"
-
+const BOTAO_NAV_APAGAR = ".apagar"
+const BOTAO_MODAL_APAGAR = ".confirmar"
+const MODAL_AVISO = "#apagar"
+const BOTAO_MODAL_CANCELAR = ".cancelar"
 
 window.addEventListener("load", principal);
 
 function principal(){
-    $(BOTAO_APAGAR).click(function(){
-        $(CLASS_SELECIONADO).each(function(){
+    $(BOTAO_NAV_APAGAR).click(function(){
+        apresentarAviso();
+    })
+    $(BOTAO_MODAL_APAGAR).click(function(){
+            $(CLASS_SELECIONADO).each(function(){
             eliminarFoto($(this).attr('id'))
         })
         window.location.reload();
+    });
+    $(BOTAO_MODAL_CANCELAR).click(function(){
+        $(MODAL_AVISO).css("display","none");
     })
     $(classFotos).click(apresentarBarra);
+
 
 }
 
@@ -55,3 +64,7 @@ function fotoSelecionada(pasta, id){
 }
 
 // TODO: Add album menus to share, invite to album, etc
+
+function apresentarAviso(){
+    $(MODAL_AVISO).css("display","block")
+};
