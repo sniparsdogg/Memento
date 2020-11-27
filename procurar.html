@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="stylesheets/default.css">
+        <link rel="stylesheet" href="stylesheets/procurar.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/default.js"></script>
+        <script src="scripts/adicionarCategorias.js"></script>
+
+        <title>MEMENTO</title>
+    </head>
+
+    <header>
+        <nav>
+            <button type="button" class="retroceder" onclick="window.location.href='memento.html'"><img src="images/leftarrow.png"></button>
+            <h1 class="titulo">Insira a categoria que deseja procurar:</h1>
+            <div class="spacer"></div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="opcoesPesquisa">
+                <form id="frmPesq" method="post">
+                    <input id="tema" type="checkbox"
+                            name="tema" value="1">
+                    <label for="tema">Tema</label><p>
+                    
+                    <input id="pessoas" type="checkbox"
+                            name="pessoas" value="1">
+                    <label for="pessoas">Pessoas</label><p>
+
+                    <input id="paisagens" type="checkbox"
+                            name="paisagens" value="1">
+                    <label for="paisagens">Paisagens</label><p>
+
+                    <input id="data" type="checkbox"
+                            name="data" value="1">
+                    <label for="data">Data</label>
+                    <input type="date" id="dataEscolhida" name="dataEscolhida"><p>
+
+                    <input id="animais" type="checkbox"
+                            name="animais" value="1">
+                    <label for="animais">Animais:</label>
+                    <input type="text" id="animaisEscolhidos" name="animaisEscolhidos"><p>
+
+                    <input id="localizacao" type="checkbox"
+                            name="localizacao" value="1">
+                    <label for="localizacao">Localização:</label>
+                    <input type="text" id="localizacaoEscolhida" name="localizacaoEscolhida"><p>
+
+                    <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
