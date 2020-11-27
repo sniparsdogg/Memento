@@ -5,11 +5,10 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="stylesheets/default.css">
-        <link rel="stylesheet" href="stylesheets/adicionar_ctg.css">
+        <link rel="stylesheet" href="stylesheets/procurar.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="scripts/default.js"></script>
-        <!-- <script src="scripts/criarPasta.js"></script> -->
         <script src="scripts/adicionarCategorias.js"></script>
 
         <title>MEMENTO</title>
@@ -17,15 +16,15 @@
 
     <header>
         <nav>
-            <button type="button" class="retroceder" onclick="window.location.href='criaralbum.html'"><img src="images/leftarrow.png"></button>
-            <h1 class="titulo">Insira as categorias:</h1>
+            <button type="button" class="retroceder" onclick="window.location.href='memento.html'"><img src="images/leftarrow.png"></button>
+            <h1 class="titulo">Insira a categoria que deseja procurar:</h1>
             <div class="spacer"></div>
         </nav>
     </header>
     <body>
         <main>
-            <section class="opcoesCategoria">
-                <form id="frmCtg" method="post">
+            <section class="opcoesPesquisa">
+                <form id="frmPesq" method="post">
                     <input id="tema" type="checkbox"
                             name="tema" value="1">
                     <label for="tema">Tema</label><p>
@@ -53,15 +52,6 @@
                     <label for="localizacao">Localização:</label>
                     <input type="text" id="localizacaoEscolhida" name="localizacaoEscolhida"><p>
 
-                    <input id="detetorFts" type="checkbox"
-                            name="detetorFts" value="1">
-                    <label for="detetorFts">Detetar e evitar fotos duplicadas?</label><p>
-                    
-                    <input id="limiteFts" type="checkbox"
-                        name="limiteFts" value="1">
-                    <label for="limiteFts">Limite de Fotos: </label>
-                    <input id="limite" type="number" name="limite" min="0" max="50" placeholder="--------">
-                  
                     <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
                 </form>
             </section>

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-#frmCtg {
+#frmPesq {
     margin: 50px auto 0;
 }
 
-#animaisEscolhidos, #localizacaoEscolhida, #dataEscolhida {
+#animaisEscolhidos, #localizacaoEscolhida, #dataEscolhida{
     font-family: 'Ubuntu Medium', sans-serif;
     font-weight:100;
     font-size: 25px;
@@ -16,31 +16,17 @@
 
 #check {
     height: 90px;
-    margin-left: 670px;
-    margin-top: -120px;
+    margin-left: 650px;
 }
 
-#detetorFts , #limiteFts, #tema, #pessoas, #paisagens, #data, #animais, #localizacao {
+#tema, #pessoas, #paisagens, #data, #animais, #localizacao {
     min-width: 30px;
     min-height: 30px;
-}
-
-#limite {
-    min-width: 35px;
-    min-height: 35px;
-    font-size: 25px;
-    border: 3px solid black;
-    border-radius: 5px;
 }
 
 label {
     font-size: 35px;
     margin-left: 15px;
-}
-
-.detetor {
-    display: inline-flex;
-    margin-left: 80px;
 }
 
 section {

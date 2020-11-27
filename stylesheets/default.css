@@ -161,3 +161,17 @@ main{
 .escondido{
     display: none;
 }
+
+li {
+    margin-left: 0px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+li>img {
+    height: 40px;
+    width: 55px;
+    margin: 25px;
+}
