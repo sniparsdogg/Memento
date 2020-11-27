@@ -4,31 +4,33 @@
     margin: 50px auto 0;
 }
 
-#frmCtg>#categorias {
+#animaisEscolhidos, #localizacaoEscolhida, #dataEscolhida {
     font-family: 'Ubuntu Medium', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    width: 70%;
-    margin: 20px;
-    padding: 20px;
+    font-weight:100;
+    font-size: 25px;
+    width: 20%;
     border: 3px solid black;
     border-radius: 5px;
-    margin-left: 170px;
+    margin-left: 5px;
 }
 
 #check {
     height: 90px;
-    margin-left: 35px;
+    margin-left: 670px;
+    margin-top: -120px;
 }
 
-#detetorFts , #limiteFts {
-    min-width: 40px;
-    min-height: 40px;
+#detetorFts , #limiteFts, #tema, #pessoas, #paisagens, #data, #animais, #localizacao {
+    min-width: 30px;
+    min-height: 30px;
 }
 
 #limite {
     min-width: 35px;
     min-height: 35px;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
 label {
@@ -42,5 +44,6 @@ label {
 }
 
 section {
-    text-align: center;
+    text-align: start;
+    margin-left: 400px;
 }

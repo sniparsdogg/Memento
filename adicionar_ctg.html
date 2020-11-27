@@ -26,19 +26,42 @@
         <main>
             <section class="opcoesCategoria">
                 <form id="frmCtg" method="post">
-                    <input type="text" id="categorias" 
-                        name="categorias" placeholder="Separe as categorias por vírgulas (,)" required>
-                    <div class="detetor">
-                        <input id="detetorFts" type="checkbox"
+                    <input id="tema" type="checkbox"
+                            name="tema" value="1">
+                    <label for="tema">Tema</label><p>
+                    
+                    <input id="pessoas" type="checkbox"
+                            name="pessoas" value="1">
+                    <label for="pessoas">Pessoas</label><p>
+
+                    <input id="paisagens" type="checkbox"
+                            name="paisagens" value="1">
+                    <label for="paisagens">Paisagens</label><p>
+
+                    <input id="data" type="checkbox"
+                            name="data" value="1">
+                    <label for="data">Data</label>
+                    <input type="date" id="dataEscolhida" name="dataEscolhida"><p>
+
+                    <input id="animais" type="checkbox"
+                            name="animais" value="1">
+                    <label for="animais">Animais:</label>
+                    <input type="text" id="animaisEscolhidos" name="animaisEscolhidos"><p>
+
+                    <input id="localizacao" type="checkbox"
+                            name="localizacao" value="1">
+                    <label for="localizacao">Localização:</label>
+                    <input type="text" id="localizacaoEscolhida" name="localizacaoEscolhida"><p>
+
+                    <input id="detetorFts" type="checkbox"
                             name="detetorFts" value="1">
-                        <label for="detetorFts">Detetar e evitar fotos duplicadas?</label>
-                    </div><br>
-                   <div class="limiteFts">
+                    <label for="detetorFts">Detetar e evitar fotos duplicadas?</label><p>
+                    
                     <input id="limiteFts" type="checkbox"
                         name="limiteFts" value="1">
                     <label for="limiteFts">Limite de Fotos: </label>
                     <input id="limite" type="number" name="limite" min="0" max="50" placeholder="--------">
-                   </div>
+                  
                     <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
                 </form>
             </section>
