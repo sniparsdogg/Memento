@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="stylesheets/default.css">
+        <link rel="stylesheet" href="stylesheets/memento.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/default.js"></script>
+        <script src="scripts/mainmenu.js"></script>        
+        <script src="scripts/memento.js"></script>
+
+        <title>MEMENTO</title>
+    </head>
+
+    <body>
+        <div id="interface">
+            <nav>
+                <button type="button" class="retroceder" onclick="window.location.href='mementoFotosAlbum.html'"><img src="images/leftarrow.png"></button>
+                <section id="titulo">Álbuns</section>
+                <div class="spacer"></div>
+                <section id="nav-links">
+                    <a href="ajuda.html"><img src="images/ajuda.png"></a>
+                    <a href="importar_para_album.html"><img src="images/importar.png"></a>
+                    <a href="procurar.html"><img src="images/lupa.png" height="50px" width="70px"></a>
+                    <a href="partilhar.html"><img src="images/partilhar.png"></a>
+                    <!-- TODO: Add album menus to share, invite to album, etc -->
+                </section>
+            </nav>
+
+            <main>
+                <div id="todosAlbuns">
+                    <section id="galeriaAlbuns" class="galeria">
+
+                    </section>
+                </div>  
+            </main>
+        </div>
+        
+    </body>
+</html>
