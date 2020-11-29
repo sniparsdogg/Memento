@@ -3,6 +3,7 @@
 const BOTAO_SUBMETER = "#botaoSubmeter";
 const BOTAO_TODAS = "#boxTodas";
 const IMG_SUBMETER = "#imgSubmeter";
+const TITULO_ALBUM = ".titulo";
 
 window.addEventListener("load", principal);
 
@@ -12,7 +13,6 @@ function principal(){
 }
 
 function defineEventHandlersParaElementsHTML() {
-
     $(BOTAO_TODAS).click(selecionarTodas);
     $(classFotos).click(modificarBotaoSubmeter);
     $(classFotos).click(modificarBotaoTodas);
@@ -41,9 +41,13 @@ function selecionarTodas() {
 }
 
 function importarFotos(){
+    let novasTags = [];
     let newFiles = [];
+    let tituloAlbum = $(TITULO_ALBUM).text();
     $(classFotos).each(function(){
         if($(this).hasClass("selected")){
+            let tags = $(this).attr('value');
+            novasTags = adicionarTags(tags, novasTags);
             let foto = new Photo($(this).attr('id'), $(this).attr('value'), $("img", this).attr('src'));
             newFiles.push(foto);
         }
@@ -57,6 +61,7 @@ function importarFotos(){
     } else if(activeAccount.username == "JoaoFilipe32"){
         atualizarFotosJoao(newFiles);
     }
+    atualizarTags(novasTags, tituloAlbum);
     window.location.href = determinarMainMenu();
 }
 
@@ -73,4 +78,51 @@ function modificarBotaoTodas(){
     } else {
         $(BOTAO_TODAS).prop("checked", true);
     }
+}
+
+function adicionarTags(tags, arrayTags){
+    let tagsNovas = tags.split(" ")
+    tagsNovas.forEach(tag => {
+        arrayTags.push(tag);
+    })
+    return arrayTags;
+}
+
+function atualizarTags(tags, album){
+    let tituloAlbum = album;
+    let tagsNovas = [];
+        tags.forEach(tagNova => {
+        let adicionarTag = true;
+        if(tagsNovas.length != 0){
+            tagsNovas.forEach(tagExistente => {
+                if(tagNova == tagExistente){
+                    adicionarTag = false;
+                }
+            })
+            if(adicionarTag){
+                tagsNovas.push(tagNova);
+            }
+        } else {
+            tagsNovas.push(tagNova);
+        }
+    });
+    let tagsExistentes = obterTagsAdicionadas();
+    if(tituloAlbum in tagsExistentes){
+        tagsNovas.forEach(tag => {
+            let adicionarTag = true;
+            if(tagsNovas.length != 0){
+                tagsExistentes[tituloAlbum].forEach(tagExistente => {
+                    if(tag == tagExistente){
+                        adicionarTag = false;
+                    }
+                })
+                if(adicionarTag){
+                    tagsExistentes[tituloAlbum].push(tag);
+                }
+            // tagsExistentes[tituloAlbum].push(tag);
+        }})
+    } else{
+        tagsExistentes[tituloAlbum] = tagsNovas;
+    }
+    localStorage.setItem(TAGS_ADICIONADAS, JSON.stringify(tagsExistentes));
 }

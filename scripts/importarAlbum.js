@@ -12,7 +12,6 @@ function principal(){
 }
 
 function defineEventHandlersParaElementsHTML() {
-
     $(BOTAO_TODAS).click(selecionarTodas);
     $(classFotos).click(modificarBotaoSubmeter);
     $(classFotos).click(modificarBotaoTodas);

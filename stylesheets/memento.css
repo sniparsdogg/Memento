@@ -65,6 +65,7 @@ main .textoImportar{
     max-height: calc(720px - 170px - 50px);
     overflow: scroll;
     overflow-x: hidden;
+    margin-left: -25px;
 }
 
 #galeria::-webkit-scrollbar {

@@ -6,8 +6,11 @@
 
         <link rel="stylesheet" href="stylesheets/default.css">
         <link rel="stylesheet" href="stylesheets/adicionar_ctg.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
         <script src="scripts/default.js"></script>
         <!-- <script src="scripts/criarPasta.js"></script> -->
         <script src="scripts/adicionarCategorias.js"></script>
@@ -24,47 +27,89 @@
     </header>
     <body>
         <main>
-            <section class="opcoesCategoria">
-                <form id="frmCtg" method="post">
-                    <input id="tema" type="checkbox"
-                            name="tema" value="1">
-                    <label for="tema">Tema</label><p>
-                    
-                    <input id="pessoas" type="checkbox"
-                            name="pessoas" value="1">
-                    <label for="pessoas">Pessoas</label><p>
+            <div class="opcoesEscolhidas">
+                <h2 class="subtitulo">Categorias escolhidas:</h2>
+            </div>
+            <div class="opcoesCategoria">
 
+                <!-- <div class="dropdown dropdown-animais">
+                    <button class="btn btn-lg btn-outline-secondary dropdown-toggle" type="button" 
+                            id="dropdownMenu1" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="true">
+                            Categorias obtidas do álbum Zoo 2020:
+                    </button>
+                            
+                    <ul id="listaAnimais" class="dropdown-menu pre-scrollable animais checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                    </ul>
+                </div> -->
+
+                <!-- <form id="frmCtg" method="post"> 
+                    <div class="categoria">                   
+                        <input id="pessoas" type="checkbox"
+                                name="pessoas" value="1">
+                        <label for="pessoas">Pessoas</label>
+                    </div> -->
+<!-- 
                     <input id="paisagens" type="checkbox"
                             name="paisagens" value="1">
-                    <label for="paisagens">Paisagens</label><p>
-
+                    <label for="paisagens">Paisagens</label><p> -->
+<!-- 
                     <input id="data" type="checkbox"
                             name="data" value="1">
                     <label for="data">Data</label>
-                    <input type="date" id="dataEscolhida" name="dataEscolhida"><p>
+                    <input type="date" id="dataEscolhida" name="dataEscolhida"><p> -->
 
-                    <input id="animais" type="checkbox"
-                            name="animais" value="1">
-                    <label for="animais">Animais:</label>
-                    <input type="text" id="animaisEscolhidos" name="animaisEscolhidos"><p>
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" 
+                                id="dropdownMenuButton" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="false">
+                            Animais
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </div> -->
+                        <!-- <div class="categoria animais">
+                            <input id="checkAnimais" type="checkbox"
+                            name="animais" value="animais">
+                            <label for="checkAnimais">Animais</label>
 
-                    <input id="localizacao" type="checkbox"
-                            name="localizacao" value="1">
-                    <label for="localizacao">Localização:</label>
-                    <input type="text" id="localizacaoEscolhida" name="localizacaoEscolhida"><p>
+                            <div class="dropdown dropdown-animais escondido">
+                                <button class="btn btn-lg btn-outline-secondary dropdown-toggle" type="button" 
+                                        id="dropdownMenu1" data-toggle="dropdown" 
+                                        aria-haspopup="true" aria-expanded="true">
+                                Selecione as categorias:
+                                </button>
+                            
+                                <ul id="listaAnimais" class="dropdown-menu pre-scrollable animais checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="categoria">
+                        <input id="localizacao" type="checkbox"
+                                name="localizacao" value="1">
+                        <label for="localizacao">Localização:</label>
+                        <input type="text" id="localizacaoEscolhida" name="localizacaoEscolhida">
+                    </div> -->
 
-                    <input id="detetorFts" type="checkbox"
+                    <!-- <input id="detetorFts" type="checkbox"
                             name="detetorFts" value="1">
-                    <label for="detetorFts">Detetar e evitar fotos duplicadas?</label><p>
-                    
-                    <input id="limiteFts" type="checkbox"
+                    <label for="detetorFts">Detetar e evitar fotos duplicadas?</label><p> -->
+                    </div>
+                        
+                    <div class="resto">
+                    <div class="categoria">
+                        <input id="limiteFts" type="checkbox"
                         name="limiteFts" value="1">
-                    <label for="limiteFts">Limite de Fotos: </label>
+                        <label for="limiteFts">Limite de Fotos: </label>
+                    
                     <input id="limite" type="number" name="limite" min="0" max="50" placeholder="--------">
-                  
+                  </div>
                     <button type="button" id="botaoSubmeter"><img id="check" src="images/greentick.png"></button>
-                </form>
-            </section>
+                </div>
+            
         </main>
     </body>
 </html>

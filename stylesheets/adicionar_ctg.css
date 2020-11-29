@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 #frmCtg {
-    margin: 50px auto 0;
+    margin: 50px auto;
 }
 
 #animaisEscolhidos, #localizacaoEscolhida, #dataEscolhida {
     font-family: 'Ubuntu Medium', sans-serif;
-    font-weight:100;
+    /* font-weight:100;
     font-size: 25px;
     width: 20%;
     border: 3px solid black;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 5px; */
 }
 
 #check {
     height: 90px;
-    margin-left: 670px;
-    margin-top: -120px;
 }
 
-#detetorFts , #limiteFts, #tema, #pessoas, #paisagens, #data, #animais, #localizacao {
+#detetorFts , #limiteFts, #tema, #pessoas, #paisagens, #data, #checkAnimais, #localizacao {
     min-width: 30px;
     min-height: 30px;
 }
@@ -43,7 +41,63 @@ label {
     margin-left: 80px;
 }
 
-section {
-    text-align: start;
-    margin-left: 400px;
+.categoria{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-animais {
+    margin-left: 20px;
+    font-size: 10pt; 
+    transition: display .8s ease;
+}
+
+.dropdown-animais li{
+    height: 60pt;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.opcoesCategoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-menu li label {
+    display: block;
+    padding: 20px 35px;
+    width: 100%;
+    clear: both;
+    font-weight: lighter;
+    font-size: 20pt;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin:0;
+    transition: background-color .4s ease;
+    text-transform: capitalize;
+}
+.checkbox-menu li input {
+    margin: 0px 5px;
+    top: 2px;
+    position: relative;
+}
+
+.checkbox-menu li.active label {
+    font-weight:bold;
+    background-color: rgb(165, 212, 138);
+}
+
+.resto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30pt;
+}
+
+.opcoesEscolhidas {
+    margin: 20pt;
 }

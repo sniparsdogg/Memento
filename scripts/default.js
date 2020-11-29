@@ -66,7 +66,7 @@ function pastaAUsar(id){
 }
 
 function obterTagsAdicionadas(){
-    return JSON.parse(localStorage.getItem(TAGS_ADICIONADAS)) || [];
+    return JSON.parse(localStorage.getItem(TAGS_ADICIONADAS)) || {};
 }
 
 function obterContaAtiva(){
