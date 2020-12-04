@@ -29,7 +29,7 @@ body{
     height: 720px;
     width: 1280px;
     border: 5px solid black;
-    overflow: scroll;    
+    overflow: scroll;
 }
 /* TODO: fix scrolling photos */
 

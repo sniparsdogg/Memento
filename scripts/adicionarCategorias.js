@@ -9,6 +9,7 @@ const TAGS_ALBUM = "categorias";
 const BOTAO_DENTRO_DROPDOWN = ".dropdown-item";
 const BOTAO_DROPDOWN = "#dropdownMenuButton";
 const ESPACO_CATEGORIAS = ".opcoesCategoria";
+const OPCAO_TAG = ".opcaoTag"
 // const LISTA_ANIMAIS = "#listaAnimais";
 // const DROPDOWN_ANIMAIS = ".dropdown-animais";
 // const CHECK_ANIMAIS = "#checkAnimais";
@@ -27,12 +28,15 @@ function getTemporaryTitle(){
 
 function getTags(){
     let tagsParaAdicionar = [];
-    // return formulario.elements[TAGS_ALBUM].value
-    // .toLowerCase()
-    // .normalize("NFD")
-    // .replace(/[\u0300-\u036f]/g, "")
-    // .split(",") || [];
+
+    $(OPCAO_TAG).each(function(){
+        if ($(this).is(':checked')) {
+            tagsParaAdicionar.push($(this).attr('value'))
+        }
+    })
+    return tagsParaAdicionar;
 }
+
 
 function getID(){
     return activeAccount.albuns.length;
@@ -97,7 +101,7 @@ function adicionarOpcoes(){
             let opcaoNova = 
             `<li>
                 <label>
-                <input value="${tag}" type="checkbox"> ${tag}
+                <input class="opcaoTag" value="${tag}" type="checkbox"> ${tag}
                 </label>
             </li>`
         $(`#lista${idTitulo}`).append(opcaoNova);
