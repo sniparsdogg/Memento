@@ -1,10 +1,12 @@
 "use strict";
 
-const FORM_PASTA = "frmAlbum"
-const BOTAO_AVANCAR = "#botaoAvancar"
-const TITULO_ALBUM = "tituloAlbum"
-const TEMP_TITLE = "tempTituloAlbum"
-const CHECK_AUTO = "#checkAuto"
+const FORM_PASTA = "frmAlbum";
+const BOTAO_AVANCAR = "#botaoAvancar";
+const TITULO_ALBUM = "tituloAlbum";
+const TEMP_TITLE = "tempTituloAlbum";
+const CHECK_AUTO = "#checkAuto";
+const BOTAO_AJUDA = "ajudaAutom";
+const AJUDA = "ajuda";
 
 let formulario = null;
 
@@ -25,7 +27,10 @@ function principal(){
 function defineEventHandlersParaElementsHTML() {
     $(BOTAO_AVANCAR).click(guardarPasta);
 
-    $(BOTAO_RETROCEDER_MENU).click(determinarMainMenu)
+    $(BOTAO_RETROCEDER_MENU).click(determinarMainMenu);
+
+    $(BOTAO_AJUDA).click(mostrarAjuda);
+
 }
 
 function guardarPasta(){
@@ -52,4 +57,12 @@ function guardarNome(){
     // if(formValid){
     localStorage.setItem(TEMP_TITLE, getFormTitle());
         // window.location.href = "adicionar_ctg.html";
+}
+//Não funciona...
+function mostrarAjuda(){
+    if (document.getElementById(AJUDA).style.display == "none") {
+        document.getElementById(AJUDA).style.display = "block";
+    } else {
+        document.getElementById(AJUDA).style.display = "none";
     }
+}
