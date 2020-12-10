@@ -5,8 +5,8 @@ const BOTAO_AVANCAR = "#botaoAvancar";
 const TITULO_ALBUM = "tituloAlbum";
 const TEMP_TITLE = "tempTituloAlbum";
 const CHECK_AUTO = "#checkAuto";
-const BOTAO_AJUDA = "ajudaAutom";
-const AJUDA = "ajuda";
+const BOTAO_AJUDA = "#ajudaAutom";
+const AJUDA = "#ajuda";
 
 let formulario = null;
 
@@ -60,9 +60,10 @@ function guardarNome(){
 }
 //Não funciona...
 function mostrarAjuda(){
-    if (document.getElementById(AJUDA).style.display == "none") {
-        document.getElementById(AJUDA).style.display = "block";
-    } else {
-        document.getElementById(AJUDA).style.display = "none";
-    }
+    // if (document.getElementById(AJUDA).style.display == "none") {
+    //     document.getElementById(AJUDA).style.display = "block";
+    // } else {
+    //     document.getElementById(AJUDA).style.display = "none";
+    // }
+    $(AJUDA).toggleClass("escondido");
 }
