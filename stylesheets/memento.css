@@ -1,7 +1,7 @@
 #titulo {
     float: left;
     margin-left: 40px;
-    font-size: 75px;
+    font-size: 55px;
 }
 
 #nav-links {
@@ -14,7 +14,7 @@
 }
 
 #nav-links a {
-    height: 80px;
+    height: 50px;
     padding: 13px;
     margin: auto 10px;
     border: 0.25vw solid black;
@@ -61,8 +61,7 @@ main .textoImportar{
 }
 
 #galeria {
-    padding-top: 50px;
-    max-height: calc(720px - 170px - 180px);
+    max-height: calc(720px - 170px - 30px);
     overflow: scroll;
     overflow-x: hidden;
     margin-left: -25px;

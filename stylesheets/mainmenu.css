@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     position: fixed;
     z-index: 0;
-    top: calc(720px - 130px);
+    top: calc(720px - 78px);
     background-color: white;
     width: 1280px;
 }
@@ -16,27 +16,29 @@
 }
 
 .navbar-baixo .botao img {
-    width: 70px;
-    height: 60px;
+    width: 50px;
+    height: 40px;
+    display: inline;
 }
 
 .navbar-baixo .botao figcaption{
+    display: inline;
     font-size: 25pt;
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
 }
 
-.importar {
-    display: flex;
-    font-size: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: calc(720px - 250px);
-    left: calc(1280px - 170px);
-}
+/*.importar {*/
+/*    display: flex;*/
+/*    font-size: 30px;*/
+/*    flex-direction: row;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*    position: fixed;*/
+/*    z-index: 1;*/
+/*    top: calc(720px - 250px);*/
+/*    left: calc(1280px - 170px);*/
+/*}*/
 
 .botao.ativo{
     /*background-color: #C0C0C0;*/

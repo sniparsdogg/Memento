@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     margin: auto;
-    height: 170px;
+    height: 110px;
     justify-content: center;
     align-items: center;
     border-bottom: 0.5vw solid black;
@@ -54,7 +54,7 @@ button{
 
 main{
     max-width: 1280px;
-    padding-top: 170px;
+    padding-top: 120px;
     position: relative;
 }
 
@@ -62,8 +62,8 @@ main{
     font-family: "Ubuntu", sans-serif;
     float: left;
     margin-left: 40px;
-    font-size: 75px;
-    font-weight: 500;
+    font-size: 55px;
+    font-weight: 300;
 }
 
 .foto{
@@ -115,7 +115,7 @@ main{
 
 .pastaAutomatica{
     margin: auto 20px;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", sans-serif;
     font-size:20px;
     position: relative;
     display: block;
@@ -127,7 +127,6 @@ main{
     height: 225px;
     text-align: center;
     padding: auto 25px;
-    
 }
 
 .galeria{
