@@ -22,6 +22,8 @@
 
 .navbar-baixo .botao figcaption{
     font-size: 25pt;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
 }
 
 .importar {
