@@ -9,10 +9,8 @@ const TAGS_ALBUM = "categorias";
 const BOTAO_DENTRO_DROPDOWN = ".dropdown-item";
 const BOTAO_DROPDOWN = "#dropdownMenuButton";
 const ESPACO_CATEGORIAS = ".opcoesCategoria";
-const OPCAO_TAG = ".opcaoTag"
-// const LISTA_ANIMAIS = "#listaAnimais";
-// const DROPDOWN_ANIMAIS = ".dropdown-animais";
-// const CHECK_ANIMAIS = "#checkAnimais";
+const OPCAO_TAG = ".opcaoTag";
+const DETETOR_DUPLICADAS = "#detetorFts";
 
 let formulario = null;
 
@@ -134,7 +132,19 @@ function getTaggedFiles(){
             })
         })
         if(matchesTags){
-            matchingFiles.push(foto)
+            if ($(DETETOR_DUPLICADAS).is(':checked')) {
+                let adicionarFoto = true;
+                matchingFiles.forEach(fotoAdicionada => {
+                    if(foto.id === fotoAdicionada.id){
+                        adicionarFoto = false;
+                    }
+                }) ;
+                if(adicionarFoto){
+                    matchingFiles.push(foto)
+                }
+            } else {
+                matchingFiles.push(foto)
+            }
         }
     })
     console.log(matchingFiles);

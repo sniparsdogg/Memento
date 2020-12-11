@@ -150,6 +150,7 @@ main{
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    z-index: 1;
     top: calc(720px - 150px);
     left: calc(1280px - 150px);
 }

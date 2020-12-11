@@ -1,0 +1,44 @@
+.navbar-baixo{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 0;
+    top: calc(720px - 130px);
+    background-color: white;
+    width: 1280px;
+}
+
+.navbar-baixo .botao{
+    margin: 0;
+    border: 5px solid black;
+    padding: 0;
+}
+
+.navbar-baixo .botao img {
+    width: 70px;
+    height: 60px;
+}
+
+.navbar-baixo .botao figcaption{
+    font-size: 25pt;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.importar {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: calc(720px - 250px);
+    left: calc(1280px - 170px);
+}
+
+.botao.ativo{
+    /*background-color: #C0C0C0;*/
+    box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.75);
+}

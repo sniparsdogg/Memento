@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" href="stylesheets/default.css">
         <link rel="stylesheet" href="stylesheets/memento.css">
+        <link rel="stylesheet" href="stylesheets/mainmenu.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="scripts/default.js"></script>
@@ -22,14 +23,12 @@
             <section id="nav-links">
                 <a href="ajuda.html"><img src="images/ajuda.png"></a>
                 <a href="criaralbum.html"><img src="images/criarAlbum.png"></a>
-                <a href="procurar.html"><img src="images/lupa.png" height="50px" width="70px"></a>
                 <a href="login.html"><img src="images/sair.png"></a>
             </section>
         </nav>
 
         <main>
             <div id="galeria">
-                <button type="button" class="albuns" onclick="window.location.href='todosAlbuns.html'">Álbuns</button>
                 <!-- <section id="galeriaAlbuns" class="galeria">
                      <button type="button" value="album1" class="pastaAutomatica" onclick="window.location.href='memento_pasta_zoo.html'">
                         <h1 class="tituloAlbum">ZOO 2020</h1>
@@ -51,6 +50,22 @@
             <section class="importar">
                 <button type="button" class="botao" onclick="window.location.href='importar.html'">
                     <img src="images/importar.png" width="100px">
+                </button>
+            </section>
+
+            <section class="navbar-baixo">
+                <button class="botao ativo">
+                    <figure>
+                        <img src="images/photo.png">
+                        <figcaption>Fotos</figcaption>
+                    </figure>
+                </button>
+
+                <button class="botao" onclick="window.location.href='todosAlbuns.html'">
+                    <figure>
+                        <img src="images/ficheiro.png">
+                        <figcaption>Álbuns</figcaption>
+                    </figure>
                 </button>
             </section>
         </main>
