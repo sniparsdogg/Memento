@@ -31,7 +31,7 @@
     border-radius: 5px;
 }
 
-label {
+label , .subtitulo {
     font-size: 35px;
     margin-left: 15px;
 }
@@ -39,11 +39,6 @@ label {
 .detetor {
     display: inline-flex;
     margin-left: 80px;
-}
-
-.categoria{
-    display: flex;
-    flex-direction: row;
 }
 
 .dropdown-animais {
