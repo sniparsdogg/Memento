@@ -13,7 +13,9 @@ Browser a usar no teste do nosso projeto: Google Chrome (o mais comum)
 Ficheiro HTML para começar: login.html
 
 Na nossa interface já se encontram 2 users predefinidos para ajudar na realização dos testes conforme os Cenários de Tarefas: 
+
 user: LuisAndre     password: xpto1234
+
 user: JoaoFilipe32  password: j0a0f1x3
 
 Auto-avaliação do projeto (0-20): 17
