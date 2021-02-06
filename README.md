@@ -9,6 +9,7 @@ Manuel Vicente    Nº53742
 Sofia Lourenço    Nº54950
 
 Browser a usar no teste do nosso projeto: Google Chrome (o mais comum)
+
 Ficheiro HTML para começar: login.html
 
 Na nossa interface já se encontram 2 users predefinidos para ajudar na realização dos testes conforme os Cenários de Tarefas: 
