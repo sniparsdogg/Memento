@@ -1,4 +1,4 @@
-#Memento
+# Memento
 
 Projeto realizado por 4 alunos do 2º ano da licenciatura de Tecnologias de Informação (LTI) da Faculdade de Ciências da Universidade de Lisboa (FCUL) no âmbito da unidade curricular Interação com Computadores.
 
